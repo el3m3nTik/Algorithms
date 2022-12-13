@@ -1,10 +1,4 @@
-#Lab2
-'''
-expression = input('Напишите выражение без знака равно')
-print(eval(expression))
-'''
-
-#lab3
+#Функция нахождения всех множителей
 def get_factors(n):
     factors = []
     div = 2
@@ -21,5 +15,6 @@ interval = int(input('Введите x: '))
 
 for i in range(1, interval + 1 ):
     glist = get_factors(i)
+    #проверяем на наличие множителей в числе
     if (7 in glist) and (3 in glist) and (5 in glist):
         print(i)
